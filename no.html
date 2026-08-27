@@ -49,9 +49,22 @@ button:hover{
 #respuesta{
     display:none;
     margin-top:30px;
-    font-size:32px;
-    color:#d63031;
+}
+
+.link-si{
+    display:inline-block;
+    margin-top:15px;
+    padding:15px 30px;
+    background:#ff6fa5;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    font-size:24px;
     font-weight:bold;
+}
+
+.link-si:hover{
+    background:#e84393;
 }
 
 </style>
@@ -62,9 +75,10 @@ button:hover{
 
 <h1>😭 ¿No?</h1>
 
-<img
-src="https://media.tenor.com/P1W9KjJ7VhEAAAAC/crying-monkey.gif"
-alt="Monhabía comprado boletos... 💔
+https://media.tenor.com/P1W9KjJ7VhEAAAAC/crying-monkey.gif
+
+<p>
+Mi corazón ya había comprado boletos... 💔
 </p>
 
 <p>
@@ -77,33 +91,22 @@ Sí, estoy segura 😭
 
 <div id="respuesta">
 
-<p>
-Bueno... 😢
-</p>
+<h2>🥺 ¿Segura?</h2>
 
 <p>
-Pero gracias por escanear el QR ❤️
+Si cambias de opinión da click aquí:
 </p>
 
-<p>
-(Última oportunidad de regresar al QR de "Sí") 😏
-</p>
+TU_ENLACE_SI
+❤️ Cambié de opinión ❤️
+</a>
 
 </div>
-
-<audio id="audio">
-<source src="https://www.soundjay.com/misc/sounds/fail-buzzer-02
 
 <script>
 
 function mostrarRespuesta(){
-
     document.getElementById("respuesta").style.display="block";
-
-    try{
-        document.getElementById("audio").play();
-    }catch(e){}
-
 }
 
 </script>
